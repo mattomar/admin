@@ -28,7 +28,10 @@ html {
 .header {
     grid-column: 2/-1;
     grid-row: 1/2;
-    background-color: aliceblue;
+    background-color: rgb(243, 247, 250);
+    padding: 10px;
+    padding-right: 70px;
+    padding-left: 70px;
 }
 
 
@@ -105,4 +108,51 @@ html {
 
 .nav li:nth-child(9) {
     background-image: url(/pics/cloud-check-variant-custom.png);
+}
+
+
+
+.upper button {
+    border: none;
+    background-color: transparent;
+    background-image: url("/pics/magnify.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+
+.upper input[type="text"] {
+    padding-right: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgb(236, 235, 235);
+    height: 20px;
+    margin-right: auto;
+}
+
+.bill {
+    background-image: url(/pics/bell-ring-outline.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.profilepic {
+    background-image: url(/pics/eye-removebg-preview.png);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.upper {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
