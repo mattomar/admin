@@ -1,14 +1,37 @@
-body{
+:root{
+    --text-color: #ebebeb;
+}
+
+body,
+html{
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    height: 100%;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
 }
 
-.sidebar{
+ .sidebar{
     grid-column: 1/2;
+    background-color: #2c89d4;
+    grid-row: 1/-1;
+    color: var(--text-color)
 }
 
+
+.header{
+    grid-column: 2/-1;
+    grid-row: 1/2;
+    background-color: aliceblue;
+}
+
+
+.projects{
+    grid-row: 2/-1;
+    background-color: aqua;
+}
