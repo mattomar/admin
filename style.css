@@ -1,5 +1,5 @@
 :root {
-    --text-color: #ffffff;
+    --text-color: #f7f3f3;
 }
 
 body,
@@ -8,6 +8,7 @@ html {
     padding: 0;
     margin: 0;
     font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -150,9 +151,62 @@ html {
     background-repeat: no-repeat;
 }
 
+.name {
+
+    font-weight: bold;
+}
+
 .upper {
     box-sizing: border-box;
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+
+
+.lower {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.profilepic2 {
+    background-image: url(/pics/eye-removebg-preview.png);
+    width: 60px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.welcoming {
+    font-size: 0.9rem;
+    padding-left: 15px;
+}
+
+.welcoming .name {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.lower ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.lower li {
+    background-color: #0284c7;
+    padding: 7px 30px;
+    border-radius: 15px;
+    color: var(--text-color);
+    font-weight: 600;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.nav2 {
+    margin-left: auto;
 }
