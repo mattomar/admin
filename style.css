@@ -1,37 +1,108 @@
-:root{
-    --text-color: #ebebeb;
+:root {
+    --text-color: #ffffff;
 }
 
 body,
-html{
+html {
     height: 100%;
     padding: 0;
     margin: 0;
+    font-size: 16px;
 }
 
-.container{
+.container {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 2.5fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
 }
 
- .sidebar{
+.sidebar {
     grid-column: 1/2;
-    background-color: #2c89d4;
+    background-color: #0284c7;
     grid-row: 1/-1;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 
-.header{
+.header {
     grid-column: 2/-1;
     grid-row: 1/2;
     background-color: aliceblue;
 }
 
 
-.projects{
+.projects {
     grid-row: 2/-1;
     background-color: aqua;
+}
+
+
+.pic img {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+.nav ul {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.nav li {
+    margin-bottom: 10px;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+
+.nav li:nth-child(1) {
+    background-image: url(/pics/home-circle-outline-custom.png);
+}
+
+.nav li:nth-child(2) {
+    background-image: url(pics/face-man-profile-custom.png);
+}
+
+.nav li:nth-child(3) {
+    background-image: url(pics/message-badge-outline-custom.png);
+}
+
+.nav li:nth-child(4) {
+    background-image: url(/pics/history-custom.png);
+}
+
+.nav li:nth-child(5) {
+    background-image: url(/pics/calendar-check-custom.png);
+}
+
+.nav li:nth-child(6) {
+    background-image: url(/pics/account-group-outline-custom.png);
+    padding-bottom: 30px;
+
+}
+
+.nav li:nth-child(7) {
+    background-image: url(/pics/cog-custom.png);
+}
+
+.nav li:nth-child(8) {
+    background-image: url(/pics/face-agent-custom.png);
+}
+
+.nav li:nth-child(9) {
+    background-image: url(/pics/cloud-check-variant-custom.png);
 }
