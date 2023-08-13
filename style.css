@@ -1,5 +1,7 @@
 :root {
     --text-color: #f7f3f3;
+    --gray-background-color: rgb(236, 235, 235);
+
 }
 
 body,
@@ -15,7 +17,7 @@ html {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr 2.5fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
 }
 
 .sidebar {
@@ -23,28 +25,180 @@ html {
     background-color: #0284c7;
     grid-row: 1/-1;
     color: var(--text-color);
+
 }
 
 
 .header {
     grid-column: 2/-1;
     grid-row: 1/2;
-    background-color: rgb(243, 247, 250);
     padding: 10px;
     padding-right: 70px;
     padding-left: 70px;
 }
 
 
+
+
 .projects {
-    grid-row: 2/-1;
-    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: var(--gray-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 10px;
+    position: relative;
 }
 
 
-.pic img {
-    width: 100px;
-    height: auto;
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+
+}
+
+.projects::before {
+    content: "Your Projects";
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+.cardpic{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+
+.star, .eye, .link{
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+}
+
+.star{
+    background-image: url(/pics/star-check-outline.png);
+
+}
+
+.eye{
+    background-image: url(/pics/eye-plus.png);
+}
+
+.link{
+    background-image: url(/pics/share-variant-outline.png);
+}
+
+
+.announcments {
+    display: grid;
+    grid-column: 3/-1;
+    grid-column-gap: 0;
+    grid-row: 1/2;
+    background-color: #fff;
+    margin-top: 60px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    padding: 30px;
+
+
+}
+
+
+.announcment{
+    margin: 0;
+}
+
+.announcment h3 {
+    font-size: 1.2;
+    padding: 0;
+    margin: 0;
+    color: black;
+}
+
+.announcment p {
+    font-size: 0.7rem;
+    margin-top: -0.5px;
+
+}
+
+.announcment:nth-child(1)::after,
+.announcment:nth-child(2)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: black; 
+    margin-top: 10px; 
+}
+
+
+.rightside::before {
+    content: "Announcements";
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.rightside::after {
+    content: "Trending";
+    position: absolute;
+    padding-top: 410px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.trending {
+    display: grid;
+    grid-column: 3/-1;
+    background-color: #fff;
+    margin-bottom: 60px;
+    border-radius: 15px;
+
+}
+
+.rightside {
+    display: grid;
+    grid-template-rows: 1.3fr 1.2fr;
+    gap: 60px;
+    background-color: var(--gray-background-color);
+    padding-right: 20px;
+    padding-left: 10px;
+    position: relative;
+
+}
+
+.pic {
+    background-image: url(/pics/dashboard-removebg-preview.png);
+    min-height: 80px;
+    min-width: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top 10px;
+    /* You can adjust the value to move it more or less */
+
 }
 
 .logo {
@@ -120,8 +274,8 @@ html {
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
 }
 
 
@@ -130,23 +284,23 @@ html {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    background-color: rgb(236, 235, 235);
-    height: 20px;
+    background-color: var(--gray-background-color);
+    min-height: 20px;
     margin-right: auto;
 }
 
 .bill {
     background-image: url(/pics/bell-ring-outline.png);
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 .profilepic {
     background-image: url(/pics/eye-removebg-preview.png);
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -173,8 +327,8 @@ html {
 
 .profilepic2 {
     background-image: url(/pics/eye-removebg-preview.png);
-    width: 60px;
-    height: 60px;
+    min-width: 60px;
+    min-height: 60px;
     background-size: contain;
     background-repeat: no-repeat;
 }
