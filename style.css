@@ -99,16 +99,16 @@ html {
 }
 
 .star {
-    background-image: url(/pics/star-check-outline.png);
+    background-image: url(pics/star-check-outline.png);
 
 }
 
 .eye {
-    background-image: url(/pics/eye-plus.png);
+    background-image: url(pics/eye-plus.png);
 }
 
 .link {
-    background-image: url(/pics/share-variant-outline.png);
+    background-image: url(pics/share-variant-outline.png);
 }
 
 
@@ -207,19 +207,19 @@ html {
 }
 
 .profileimage1 {
-    background-image: url(/pics/skyprofile2-removebg-preview.png);
+    background-image: url(pics/skyprofile2-removebg-preview.png);
 }
 
 .profileimage2 {
-    background-image: url(/pics/skyprofile-removebg-preview.png);
+    background-image: url(pics/skyprofile-removebg-preview.png);
 }
 
 .profileimage3 {
-    background-image: url(/pics/eye-removebg-preview.png);
+    background-image: url(pics/eye-removebg-preview.png);
 }
 
 .profileimage4 {
-    background-image: url(/pics/earthprofile-removebg-preview.png);
+    background-image: url(pics/earthprofile-removebg-preview.png);
 }
 
 
@@ -234,7 +234,7 @@ html {
 }
 
 .pic {
-    background-image: url(/pics/dashboard-removebg-preview.png);
+    background-image: url(pics/dashboard-removebg-preview.png);
     min-height: 80px;
     min-width: 80px;
     background-size: contain;
@@ -287,25 +287,25 @@ html {
 }
 
 .nav li:nth-child(5) {
-    background-image: url(/pics/calendar-check-custom.png);
+    background-image: url(pics/calendar-check-custom.png);
 }
 
 .nav li:nth-child(6) {
-    background-image: url(/pics/account-group-outline-custom.png);
+    background-image: url(pics/account-group-outline-custom.png);
     padding-bottom: 30px;
 
 }
 
 .nav li:nth-child(7) {
-    background-image: url(/pics/cog-custom.png);
+    background-image: url(pics/cog-custom.png);
 }
 
 .nav li:nth-child(8) {
-    background-image: url(/pics/face-agent-custom.png);
+    background-image: url(pics/face-agent-custom.png);
 }
 
 .nav li:nth-child(9) {
-    background-image: url(/pics/cloud-check-variant-custom.png);
+    background-image: url(pics/cloud-check-variant-custom.png);
 }
 
 
@@ -333,7 +333,7 @@ html {
 }
 
 .bill {
-    background-image: url(/pics/bell-ring-outline.png);
+    background-image: url(pics/bell-ring-outline.png);
     min-width: 20px;
     min-height: 20px;
     background-size: contain;
@@ -341,7 +341,7 @@ html {
 }
 
 .profilepic {
-    background-image: url(/pics/eye-removebg-preview.png);
+    background-image: url(pics/eye-removebg-preview.png);
     min-width: 40px;
     min-height: 40px;
     background-size: contain;
@@ -369,7 +369,7 @@ html {
 }
 
 .profilepic2 {
-    background-image: url(/pics/eye-removebg-preview.png);
+    background-image: url(pics/eye-removebg-preview.png);
     min-width: 60px;
     min-height: 60px;
     background-size: contain;
