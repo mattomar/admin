@@ -7,6 +7,7 @@
 body,
 html {
     height: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     font-size: 16px;
@@ -16,8 +17,12 @@ html {
 .container {
     display: grid;
     height: 100%;
+    width: 100%;
     grid-template-columns: 1fr 2.5fr 1.3fr;
     grid-template-rows: 1fr 2fr 2fr 2fr;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    
 }
 
 .sidebar {
@@ -45,10 +50,7 @@ html {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     background-color: var(--gray-background-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding: 60px 20px;
     position: relative;
 }
 
@@ -225,16 +227,18 @@ html {
 
 .rightside {
     display: grid;
+    grid-column: 3/-1;
     grid-template-rows: 1.3fr 1.2fr;
     gap: 60px;
     background-color: var(--gray-background-color);
     padding-right: 20px;
     padding-left: 10px;
     position: relative;
+    align-self: stretch;
 }
 
 .pic {
-    background-image: url(pics/dashboard-removebg-preview.png);
+    background-image: url(./pics/dashboard-removebg-preview.png);
     min-height: 80px;
     min-width: 80px;
     background-size: contain;
@@ -313,7 +317,7 @@ html {
 .upper button {
     border: none;
     background-color: transparent;
-    background-image: url("/pics/magnify.png");
+    background-image: url("pics/magnify.png");
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -408,45 +412,3 @@ html {
     margin-left: auto;
 }
 
-@media screen and (max-width: 950px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 1fr 1fr 1fr;
-    }
-
-    .sidebar {
-        grid-row: auto;
-        grid-column: auto;
-    }
-
-    .header,
-    .projects,
-    .rightside {
-        grid-column: auto;
-        grid-row: auto;
-    }
-
-    .announcments,
-    .trending {
-        grid-column: auto;
-        margin-top: 20px;
-    }
-
-
-
-    .lower ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .lower li {
-        padding: 7px 15px;
-    }
-
-    .rightside::before {
-
-        margin-top: -35px;
-      
-    }
-    
-}
