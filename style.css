@@ -271,7 +271,7 @@ html {
 
 
 .nav li:nth-child(1) {
-    background-image: url(/pics/home-circle-outline-custom.png);
+    background-image: url(pics/home-circle-outline-custom.png);
 }
 
 .nav li:nth-child(2) {
@@ -283,7 +283,7 @@ html {
 }
 
 .nav li:nth-child(4) {
-    background-image: url(/pics/history-custom.png);
+    background-image: url(pics/history-custom.png);
 }
 
 .nav li:nth-child(5) {
